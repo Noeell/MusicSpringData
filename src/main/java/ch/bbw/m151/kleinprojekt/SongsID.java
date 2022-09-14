@@ -6,8 +6,8 @@ import java.io.Serializable;
 @Embeddable
 public class SongsID implements Serializable {
     private String title;
-    private String artist;
     private String added;
+    private String dur;
 }
 
 

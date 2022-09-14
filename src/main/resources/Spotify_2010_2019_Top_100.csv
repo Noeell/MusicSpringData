@@ -1,8 +1,7 @@
-﻿title,artist,top_genre,year_released,added,bpm,nrgy,dnce,dB,live,val,dur,acous,spch,pop,top_year,artist_type
-STARSTRUKK (feat. Katy Perry),3OH!3,dance pop,2009,2022‑02‑17,140,81,61,-6,23,23,203,0,6,70,2010,Duo
-My First Kiss (feat. Ke$ha),3OH!3,dance pop,2010,2022‑02‑17,138,89,68,-4,36,83,192,1,8,68,2010,Duo
-I Need A Dollar,Aloe Blacc,pop soul,2010,2022‑02‑17,95,48,84,-7,9,96,243,20,3,72,2010,Solo
+﻿title,artist_mb,top_genre,year_released,added,bpm,nrgy,dnce,dB,live,val,dur,acous,spch,pop,top_year,artist_type
+Mirrors,Justin Timberlake,dance pop,2013,2020‑06‑11,77,51,57,-7,9,51,484,23,5,83,2013,Solo
 Airplanes (feat. Hayley Williams of Paramore),B.o.B,atl hip hop,2010,2022‑02‑17,93,87,66,-4,4,38,180,11,12,80,2010,Solo
+I Need A Dollar,Aloe Blacc,pop soul,2010,2022‑02‑17,95,48,84,-7,9,96,243,20,3,72,2010,Solo
 Nothin' on You (feat. Bruno Mars),B.o.B,atl hip hop,2010,2022‑02‑17,104,85,69,-6,9,74,268,39,5,79,2010,Solo
 Magic (feat. Rivers Cuomo),B.o.B,atl hip hop,2010,2022‑02‑17,82,93,55,-4,35,79,196,1,34,71,2010,Solo
 The Time (Dirty Bit),Black Eyed Peas,dance pop,2010,2022‑02‑17,128,81,82,-8,60,44,308,7,7,75,2010,Band/Group
@@ -44,7 +43,6 @@ Commander,Kelly Rowland,atl hip hop,2011,2022‑02‑17,125,88,40,-4,36,57,218,2
 TiK ToK,Kesha,dance pop,2010,2022‑02‑17,120,84,76,-3,29,71,200,10,14,86,2010,Solo
 Your Love Is My Drug,Kesha,dance pop,2010,2022‑02‑17,120,61,83,-4,9,76,187,1,10,75,2010,Solo
 Take It Off,Kesha,dance pop,2010,2022‑02‑17,125,68,73,-5,9,74,215,0,3,74,2010,Solo
-Blah Blah Blah (feat. 3OH!3),Kesha,dance pop,2010,2022‑02‑17,120,84,75,-3,42,52,172,8,12,67,2010,Solo
 Wavin' Flag,K'NAAN,reggae fusion,2009,2022‑02‑17,76,70,63,-6,24,72,221,13,7,63,2010,Solo
 Live Like We're Dying,Kris Allen,idol,2009,2022‑02‑17,92,89,59,-3,34,94,213,3,4,57,2010,Solo
 Bad Romance,Lady Gaga,art pop,2009,2022‑02‑17,119,92,70,-4,8,71,295,0,4,86,2010,Solo
@@ -348,7 +346,6 @@ The Other Side,Jason Derulo,dance pop,2013,2020‑06‑11,128,84,56,-4,14,52,227
 Holy Grail,JAY-Z,east coast hip hop,2013,2020‑06‑11,145,53,68,-7,26,16,338,6,8,68,2013,Solo
 Love Me Again,John Newman,dance pop,2013,2020‑06‑11,126,89,50,-5,10,21,240,0,4,69,2013,Solo
 Beauty And A Beat,Justin Bieber,canadian pop,2012,2020‑06‑11,128,84,60,-5,7,53,228,0,6,78,2013,Solo
-Mirrors,Justin Timberlake,dance pop,2013,2020‑06‑11,77,51,57,-7,9,51,484,23,5,83,2013,Solo
 Suit & Tie (feat. Jay-Z),Justin Timberlake,dance pop,2013,2020‑06‑11,102,60,80,-4,16,36,326,10,22,72,2013,Solo
 Black Skinhead,Kanye West,chicago rap,2013,2020‑06‑11,130,81,77,-6,17,33,188,0,28,80,2013,Solo
 This Is How We Do,Katy Perry,dance pop,2013,2020‑06‑11,96,64,69,-6,15,80,204,2,5,66,2013,Solo

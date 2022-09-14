@@ -1,19 +1,23 @@
 package ch.bbw.m151.kleinprojekt;
 
-import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+
+import javax.persistence.*;
 
 @Entity(name = "songs")
 public class SongsEntity {
     @EmbeddedId
     private SongsID id;
+
+    @ManyToOne
+    @NotFound(action = NotFoundAction.IGNORE)
+    @JoinColumn(name = "ARTIST_MB")
+    private ArtistsEntity artist;
     @Column
     private String topGenre;
     @Column
     private int yearReleased;
-    @Column
-    private String dur;
     @Column
     private int topYear;
     @Column
@@ -29,10 +33,6 @@ public class SongsEntity {
 
     public int getYearReleased() {
         return yearReleased;
-    }
-
-    public String getDur() {
-        return dur;
     }
 
     public int getTop_year() {
