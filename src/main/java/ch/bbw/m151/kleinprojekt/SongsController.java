@@ -22,8 +22,8 @@ public class SongsController {
     }
 
     @GetMapping("/{title}/{year}")
-    public ResponseEntity<List<SongsEntity>> findAllByYearReleasedAndTitleStartsWith(@PathVariable("title") String title, @PathVariable("year") int year) {
-        return ResponseEntity.ok(service.findAllByYearReleasedAndTitleStartsWith(year, title));
+    public ResponseEntity<List<SongsEntity>> findAllByYearReleasedAfterAndTitleStartsWith(@PathVariable("title") String title, @PathVariable("year") int year) {
+        return ResponseEntity.ok(service.findAllByYearReleasedAfterAndTitleStartsWith(year, title));
     }
 
     @GetMapping("/pageable/{topYear}")
@@ -32,13 +32,13 @@ public class SongsController {
     }
 
     @DeleteMapping("/delete/{topYear}")
-    public ResponseEntity<Long> deleteByTitle(@PathVariable("topYear") int topYear) {
-        return ResponseEntity.status(200).body(service.deleteByTitle(topYear));
+    public ResponseEntity<Long> deleteByTopYear(@PathVariable("topYear") int topYear) {
+        return ResponseEntity.status(200).body(service.deleteByTopYear(topYear));
     }
 
     @GetMapping("/query/{title}")
-    public ResponseEntity<List<Object>> selectAddedDurAndTitle(@PathVariable("title") String title) {
-        return ResponseEntity.ok(service.selectAddedDurAndTitle(title));
+    public ResponseEntity<List<Object>> getByTitle(@PathVariable("title") String title) {
+        return ResponseEntity.ok(service.getByTitle(title));
     }
 
     @GetMapping("/join")

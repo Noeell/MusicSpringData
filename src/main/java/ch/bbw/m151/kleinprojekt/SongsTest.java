@@ -38,7 +38,6 @@ public class SongsTest implements WithAssertions {
     @Test
     void deleteByTopYear() {
         songsRepository.deleteByTopYearIs(2010);
-
         List<SongsEntity> allSongs = songsRepository.findAll();
 
         for (SongsEntity song : allSongs) {
@@ -49,7 +48,6 @@ public class SongsTest implements WithAssertions {
     @Test
     void selectWithPaging() {
         Pageable pageable = PageRequest.of(0, 5);
-
         Page<SongsEntity> songsEntityPage = songsRepository.findByTopYearIs(2010, pageable);
         List<SongsEntity> allSongsWithTopYear = songsRepository.findAllByTopYearIs(2010);
 
@@ -59,7 +57,7 @@ public class SongsTest implements WithAssertions {
 
     @Test
     void joinTwoTables() {
-        List list = songsRepository.joinTwoTables();
+        List<Object> list = songsRepository.joinTwoTables();
         Object result = list.get(0);
         Object[] expectedResult = new Object[]{"Justin Timberlake", "United States", "2821887", "Mirrors"};
 
@@ -76,4 +74,10 @@ public class SongsTest implements WithAssertions {
 
         assertThat(noEntries.size()).isEqualTo(0);
     }
+
+   /* @Test
+    void sqlInjection(){
+        List list = nativeQueryService.findAllSongsByTitle("'' OR 1=1");
+        System.out.println(list.size());
+    }*/
 }

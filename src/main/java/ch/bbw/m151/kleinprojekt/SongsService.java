@@ -20,11 +20,11 @@ public class SongsService {
         return repository.findAllByTopYearIs(topYear);
     }
 
-    public List<SongsEntity> findAllByYearReleasedAndTitleStartsWith(int year, String title) {
+    public List<SongsEntity> findAllByYearReleasedAfterAndTitleStartsWith(int year, String title) {
         return repository.findAllByYearReleasedAfterAndId_TitleStartsWith(year, title);
     }
 
-    public long deleteByTitle(int topYear) {
+    public long deleteByTopYear(int topYear) {
         return repository.deleteByTopYearIs(topYear);
     }
 
@@ -34,7 +34,7 @@ public class SongsService {
         return repository.findByTopYearIs(topYear, pageable);
     }
 
-    public List<Object> selectAddedDurAndTitle(String title) {
+    public List<Object> getByTitle(String title) {
         return repository.getByTitle(title);
     }
 

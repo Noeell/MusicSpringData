@@ -14,7 +14,6 @@ public class KleinprojektApplication {
         SpringApplication.run(KleinprojektApplication.class, args);
     }
 
-
     @Bean(initMethod = "start", destroyMethod = "stop")
     public Server inMemoryH2DatabaseaServer() throws SQLException {
         // connectable on: jdbc:h2:tcp://localhost:9090/mem:mydb
