@@ -4,13 +4,15 @@ import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
 
+@Transactional
 @Entity(name = "songs")
 public class SongsEntity {
     @EmbeddedId
     private SongsID id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @NotFound(action = NotFoundAction.IGNORE)
     @JoinColumn(name = "ARTIST_MB")
     private ArtistsEntity artist;
@@ -25,6 +27,10 @@ public class SongsEntity {
 
     public SongsID getId() {
         return id;
+    }
+
+    public ArtistsEntity getArtist() {
+        return artist;
     }
 
     public String getTopGenre() {

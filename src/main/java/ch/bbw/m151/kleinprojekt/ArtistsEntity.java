@@ -1,18 +1,17 @@
 package ch.bbw.m151.kleinprojekt;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Transactional
 @Entity(name = "artists")
 public class ArtistsEntity {
 
     @Id
     private String artistMb;
 
-    @OneToMany(mappedBy = "artist")
+    @OneToMany(mappedBy = "artist", fetch = FetchType.EAGER)
     private List<SongsEntity> songs;
 
     @Column
@@ -21,4 +20,20 @@ public class ArtistsEntity {
     @Column
     private String listenersLastfm;
 
+
+    public String getArtistMb() {
+        return artistMb;
+    }
+
+    public List<SongsEntity> getSongs() {
+        return songs;
+    }
+
+    public String getCountryMb() {
+        return countryMb;
+    }
+
+    public String getListenersLastfm() {
+        return listenersLastfm;
+    }
 }

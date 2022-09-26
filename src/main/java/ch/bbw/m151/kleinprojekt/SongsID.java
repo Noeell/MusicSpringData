@@ -8,6 +8,18 @@ public class SongsID implements Serializable {
     private String title;
     private String added;
     private String dur;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAdded() {
+        return added;
+    }
+
+    public String getDur() {
+        return dur;
+    }
 }
 
 
