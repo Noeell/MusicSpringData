@@ -29,6 +29,4 @@ public interface SongsRepository extends JpaRepository<SongsEntity, SongsID> {
     @Query(value = "select s.artist_mb, s.country_mb ,s.listeners_lastfm, s2.title from ARTISTS as s inner join SONGS as S2 on s.ARTIST_MB = S2.ARTIST_MB", nativeQuery = true)
     List<Object> joinTwoTables();
 
-    @Query(value = "SELECT s.id.dur, s.id.title from songs s where s.id.title = :title")
-    List<Object> sqlInjection(@Param("title") String title);
 }
